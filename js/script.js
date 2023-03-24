@@ -52,3 +52,20 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+//about success alert
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+  })
+  .then(response => {
+    if (response.ok) {
+      document.getElementById('success-message').style.display = 'block';
+      form.reset();
+    }
+  })
+  .catch(error => console.error('Error:', error));
+});

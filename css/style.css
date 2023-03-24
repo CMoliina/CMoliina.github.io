@@ -90,9 +90,11 @@ section {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-2.4rem);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -345,6 +347,18 @@ span {
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.success-msg {
+    background-color: var(--second-bg-color);
+    color: #53fa00;
+    font-weight: 700;
+    font-size: medium;
+    padding: 10px;
+    width: 35rem;
+    margin: auto;
+    margin-right: 4rem;
+    border-radius: 5px;
 }
 
 .footer {
