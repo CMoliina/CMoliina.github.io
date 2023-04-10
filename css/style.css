@@ -162,6 +162,7 @@ span {
     align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
+    text-align: justify;
 }
 
 .about-img img {
@@ -186,7 +187,7 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-    text-align: justify;
+    
 }
 
 .services h2 {
@@ -240,7 +241,7 @@ span {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     align-items: center;
     gap: 2.5rem;
 }
